@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuLSP</title>
+    <script src="QLSP.js"></script>
+</head>
+<body onload="displayProduct()">
+<h1>All Product</h1>
+<label>
+    <input type="text" id="add" placeholder="new product">
+    <button onclick="">ADD</button>
+
+    <input type="text" id="editProduct">
+    <button type="text" id="edit" value="EDIT">EDIT</button>
+</label>
+<h1>Display all product</h1>
+<br>
+<table id="list"></table>
+</body>
+<!--<script>-->
+<!--    function add(product) {-->
+<!--        let newProduct = document.getElementById('addProduct').value;-->
+<!--        product.push(newProduct)-->
+<!--        document.getElementById("list").innerHTML = display(product);-->
+<!--    }-->
+<!--    function display(product) {-->
+<!--        let nameProduct = "<tr>"-->
+<!--        for (let i = 0; i < product.length; i++){-->
+
+<!--            nameProduct += "<td>" + product[i] + "</td>"-->
+<!--            nameProduct += "<td> <button onclick='edit(product)'></button></td>"-->
+<!--            nameProduct += "<td><button onclick='del(product)'></button></td>"-->
+<!--            nameProduct += "</tr>"-->
+<!--        } return  nameProduct ;-->
+<!--    }-->
+<!--    function edit(product, j) {-->
+
+<!--    }-->
+<!--    function del(product, j){-->
+<!--        product.splice(j, 1)-->
+<!--        document.getElementById("lsit").innerHTML = display(product);-->
+<!--    }-->
+<!--</script>-->
+</html>

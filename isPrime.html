@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Prime Number</title>
+</head>
+<body>
+<!--<p>-->
+<!--    <input type="number" id="inNum"-->
+<!--           oninput="isPrime(this.value)"-->
+<!--           onchange="isPrime(this.value)">-->
+<!--</p>-->
+
+<!--<p>The number is:<span id="outNum"></span></p>-->
+<script>
+
+    // function isPrime() {
+    //     let number = document.getElementById("inNum").value;
+    //     let flag = true;
+    //     if (number < 2) {
+    //         flag = false;
+    //     } else if (number === 2) {
+    //         flag = true;
+    //     } else if (number % 2 === 0) {
+    //         flag = false;
+    //     } else {
+    //        for (let i = 3; i < Math.sqrt(number); i += 2) {
+    //             if (number % i === 0) {
+    //                 flag = false;
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     if (flag) {
+    //         document.getElementById("outNum").innerHTML = " is a prime number " ;
+    //     } else {
+    //         document.getElementById("outNum").innerHTML = " is not a prime number " ;
+    //     }
+    // }
+    let number = +prompt()
+    function isPrime(num) {
+        if (num < 2) {
+            return false
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if( num % i === 0) {
+                    return false;
+                }
+            }
+
+        }
+        return true;
+    } if (isPrime(number)) {
+        alert(number + " is a prime number")
+    } else {
+        alert(number + " is not a prime number ")
+    }
+
+</script>
+</body>
+</html>

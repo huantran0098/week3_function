@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="checkStar(starName)">
+<p id="result"></p>
+<script>
+  let starA = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+  let starB = [ "Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+  let starName = prompt('Enter the star name to check')
+
+  function checkStar(starName) {
+
+      if (starA.includes(starName)){
+          document.getElementById("result").innerHTML = starB[starA.indexOf(starName)]
+      } else {
+          alert("Not found")
+      }
+  }
+
+
+</script>
+</body>
+</html>

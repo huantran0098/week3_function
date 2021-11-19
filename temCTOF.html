@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change tem C to F</title>
+</head>
+<body>
+<p>
+    <label>Fahrenheit</label>
+    <input type="number" id="inTemp" placeholder="Fahrenheit"
+           oninput="tempChange(this.value)"
+           onchange="temChange(this.value)">
+</p>
+<p>Celius:<span id="outTemp"></span></p>
+<script>
+    function temChange(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outTemp").innerHTML = (valNum - 32) / 1.8;
+    }
+</script>
+</body>
+</html>

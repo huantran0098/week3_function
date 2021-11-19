@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai1
+    // let a = +prompt('enter a') ;
+    // function binhPhuong() {
+    //
+    //     return  a ^ 2 ;
+    // }
+    // let square = binhPhuong(a) ;
+    // console.log(square)
+
+    //bai2
+    // let r = +prompt('nhap ban kinh hinh tron')
+    // function chuVi() {
+    //     let chuVi = Math.PI * (2 * r);
+    //     return chuVi;
+    // }
+    // function dienTich(){
+    //     let dienTich = Math.PI * (r * r);
+    //     return dienTich;
+    // }
+    // let s = dienTich(r) ;
+    // let c = chuVi(r) ;
+    // console.log(s)
+    // alert(c)
+    //bai3
+    // let num = +prompt('enter num')
+    // function giaiThua(number) {
+    //     for (i = 1; i <= array.length; i++) {
+    //         return number * i
+    //     }
+    // }
+    // console.log(giaiThua(num))
+    //bai4
+    // let number = prompt()
+    // function typeOfNaN(x) {
+    //     if (number.isNaN(x)){
+    //         return "number NaN" ;
+    //     }
+    //     if (isNaN(x)){
+    //         return NaN
+    //     }
+    // }
+    // console.log(typeOfNaN(number))
+    //bai5
+    // let num1 = +prompt('so1')
+    // let num2 = +prompt('so2')
+    // let num3 = +prompt('so3')
+    //
+    // function checkMin(num1, num2, num3) {
+    //     let min = num1
+    //     if (num1 > num2 ) {
+    //         min = num2 ;
+    //     } else if ( min > num3 ){
+    //         min = num3
+    //     } return min;
+    // }
+    // alert("so nho nhat la: " + checkMin(num1, num2, num3))
+    //bai6
+    // let num = +prompt('enter number ')
+    //
+    // function checkNumber(number) {
+    //     if (number > = 0){
+    //         return true ;
+    //     } else {
+    //         return  false ;
+    //     }
+    // }
+    // alert(checkNumber(num)) ;
+    //bai7
+    // let num1 = +prompt('so1')
+    // let num2 = +prompt('so2')
+    // function swapNum(number1, number2) {
+    //     let temp = number1
+    //     let number1 = number2
+    //     let number2 = temp
+    //     return [number1, number2]
+    // }
+    // alert(swapNum(num1, num2))
+    //bai8
+    // let num = +prompt("Nhập vào số lượng ptu của mảng: ")
+    // let array = new Array(num)
+    //     for (let i = 0; i < array.length; i++) {
+    //         array[i] = +prompt("Nhập vào phần tử thứ " + (i+1) + ": ")
+    //     }
+    // function reverseArray(arr) {
+    //     let reArray = arr.reverse()
+    //     return reArray ;
+    // }
+    // console.log(reverseArray(array))
+    //bai9
+    let kiTu = prompt('nhap vao so ki tu')
+    let array = new Array(kiTu)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt('nhap ki tu thu ' + (i + 1) + ":")
+    }
+
+    function checKiTU(arr) {
+        let inKiTu = prompt('nhap ki tu')
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            arr.indexOf(inKiTu)
+            count++
+        }
+        if (count === 0) {
+            alert("-1")
+        } else {
+            alert(count);
+        }
+    }
+
+    let check = checKiTU(array)
+    alert(check)
+
+</script>
+</body>
+</html>
